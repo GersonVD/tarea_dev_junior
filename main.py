@@ -8,8 +8,9 @@ def calculate_panels(panel_width: int, panel_height: int,
     maximo_paneles = 0
 
     for ancho_p, alto_p in [(panel_width, panel_height), (panel_height, panel_width)]:
-
+        print(ancho_p,alto_p)
         max_filas = roof_height // alto_p
+        print(max_filas)
 
         for filas in range(max_filas + 1):
             
